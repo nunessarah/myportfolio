@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <style>
 body,h1 {font-family: "Raleway", Arial, sans-serif}
 h1 {letter-spacing: 6px}
@@ -23,24 +24,31 @@ h1 {letter-spacing: 6px}
   
   <div class="w3-padding-32">
     <div class="w3-bar w3-border">
-      <a href="index.asp" class="w3-bar-item w3-button w3-dark-grey">Home</a>
-      <a href="portfolio.asp" class="w3-bar-item w3-button">Portfolio</a>
-      <a href="about us.asp" class="w3-bar-item w3-button">About me</a>
-      <a href="contact .asp" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+      <a href="index.html" class="w3-bar-item w3-button w3-dark-grey">Home</a>
+      <a href="portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
+      <a href="about us.html" class="w3-bar-item w3-button">About me</a>
+      <a href="contact .html" class="w3-bar-item w3-button w3-hide-small">Contact</a>
   </div>
 </header>
-
-
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>Welcome to My Portfolio</h1>      
+    <p>Feel free to look around.</p>
+  
 <!-- Slide Show -->
 <div class="w3-row-padding" style="margin-bottom:128px">
 <section>
-  <img class="mySlides" src="img_band_la.jpg" style="width:100%">
-  <img class="mySlides" src="img_band_ny.jpg" style="width:100%">
-  <img class="mySlides" src="img_band_chicago.jpg" style="width:100%">
+  <img class="mySlides" src="img/vases.jpg"style="width:65%">
+  <img class="mySlides" src="img/flower.jpg" style="width:65%">
+  <img class="mySlides" src="img/print.jpg" style="width:65%">
+  <img class="mySlides" src="img/girl.svg" style="width:65%">
+</div>
+</div>
+</div>
 </section>
 
 <script>
-// Automatic Slideshow - change image every 3 seconds
+// Automatic Slideshow - changes image every 5 seconds
 var myIndex = 0;
 carousel();
 
@@ -53,14 +61,13 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}
   x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 3000);
+  setTimeout(carousel, 5000);
 }
 </script>
 
 </div>
 
 <!-- End Page Content -->
-</div>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
